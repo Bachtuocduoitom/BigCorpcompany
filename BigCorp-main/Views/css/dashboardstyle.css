@@ -1,0 +1,55 @@
+:root {
+    --offcanvas-width: 270px;
+    --topNavbarHeight: 60px;
+    --primary-color-light: #3A3B3C;
+}
+
+#offcanvasExample {
+    width: var(--offcanvas-width);
+}
+
+#offcanvasExample li {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    align-items: center;
+}
+
+#offcanvasExample li .icon {
+    font-size: 20px;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+#offcanvasExample li .text {
+    font-size: 16px;
+}
+
+#offcanvasExample li a:hover {
+    color: white;
+    background: var(--primary-color-light);
+    border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+    body{
+        overflow: auto !important;
+    }
+    .offcanvas-backdrop::before{
+        display: none;
+    }
+    main {
+        margin-top: var(--topNavbarHeight);
+        margin-left: var(--offcanvas-width);
+    }
+    #offcanvasExample {
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100% - var(--topNavbarHeight));
+    }
+}

@@ -1,0 +1,79 @@
+#dropmenu {
+  position: relative;
+  /*border: solid grey;*/
+  padding-top: 5px;
+  padding-bottom:5px;
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+#thongtinthongke {
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+.bigbutton {
+  padding: 30px;
+  background-color: lawngreen;
+}
+#dropmenu > li {
+
+  height: 20px;
+  padding: 10px;
+  list-style-type: none;
+  cursor:pointer;
+}
+
+#l1 {
+  display: none;
+  position:absolute;
+  top:5px;
+  left:250px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  /*background-color: #2f8d9a;*/
+  border: solid gray;
+}
+
+#l2 {
+  display: none;
+  position:absolute;
+  top:45px;
+  left:250px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  /*background-color: #2f8d9a;*/
+  border: solid gray;
+}
+
+#l3 {
+  display: none;
+  position:absolute;
+  top:85px;
+  left:250px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  /*background-color: #2f8d9a;*/
+  border: solid gray;
+}
+
+#dropmenu  > li:hover > #l1  {
+  display: block;
+}
+#dropmenu  > li:hover > #l2  {
+  display: block;
+}
+#dropmenu  > li:hover > #l3  {
+  display: block;
+}
+
+#dropmenu  > li > ul > li {
+  /*display: inline;*/
+  cursor:pointer;
+  list-style-type: none;
+  padding: 5px;
+}
+#dropmenu  > li > ul > li:hover {
+  color: red;
+}

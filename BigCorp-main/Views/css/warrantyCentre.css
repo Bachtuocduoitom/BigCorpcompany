@@ -1,0 +1,10 @@
+.bigbutton {
+  padding: 30px;
+  background-color: deepskyblue;
+}
+.hide {
+  display: none;
+}
+#ThongKe > li:hover {
+  color: red;
+}
